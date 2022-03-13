@@ -4,7 +4,8 @@
   "description": "I'm integrating 2 servers to create a single, authenticated API server.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node index.js",
+    "test": "NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
