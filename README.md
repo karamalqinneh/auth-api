@@ -6,3 +6,7 @@ I'm integrating 2 servers to create a single, authenticated API server.
 
 1. [PR Link](https://github.com/karamalqinneh/auth-api/pull/2)
 2. [Deployment Link](https://karam-auth-api.herokuapp.com/)
+
+## UML Diagram
+
+![UML Diagram](./public/assets/UML-Auth.jpg)
