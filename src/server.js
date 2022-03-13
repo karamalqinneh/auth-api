@@ -3,7 +3,7 @@ const notFoundHandler = require("./error-handlers/404");
 const errorHandler = require("./error-handlers/500");
 const apiRoute = require("./routes/auth/api.route");
 const authRoute = require("./routes/v2/auth.route");
-const modelRoute = require("./routes/v1/model.route");
+const modelRoute = require("./routes/v1/contacts.route");
 
 // express app
 const app = express();
