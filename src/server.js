@@ -1,8 +1,9 @@
 const express = require("express");
 const notFoundHandler = require("./error-handlers/404");
 const errorHandler = require("./error-handlers/500");
-const apiRoute = require("./routes/v1/api.route");
+const apiRoute = require("./routes/auth/api.route");
 const authRoute = require("./routes/v2/auth.route");
+const modelRoute = require("./routes/v1/model.route");
 
 // express app
 const app = express();
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
 
 app.use(apiRoute);
 app.use(authRoute);
+app.use(modelRoute);
 
 app.use("*", notFoundHandler);
 app.use(errorHandler);
